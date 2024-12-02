@@ -33,7 +33,7 @@ namespace App
                 using (var connection = new MySqlConnection(connectionString))
                 {
                     connection.Open();
-                    //Console.WriteLine("> Connected to MySQL!");
+                    //Console.WriteLine("> Connected to MySQL");
 
                     // Insert data
                     Console.Write("> What's your name? ");
