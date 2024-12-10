@@ -1614,9 +1614,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dimitris Karavergos\\source\\repos\\GirlPickuper\\GirlPickuper.csproj",
-      "projectName": "GirlPickuper",
-      "projectPath": "C:\\Users\\Dimitris Karavergos\\source\\repos\\GirlPickuper\\GirlPickuper.csproj",
+      "projectUniqueName": "C:\\Users\\Dimitris Karavergos\\source\\repos\\GirlPickuper\\ArtificialWingman.csproj",
+      "projectName": "ArtificialWingman",
+      "projectPath": "C:\\Users\\Dimitris Karavergos\\source\\repos\\GirlPickuper\\ArtificialWingman.csproj",
       "packagesPath": "C:\\Users\\Dimitris Karavergos\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Dimitris Karavergos\\source\\repos\\GirlPickuper\\obj\\",
       "projectStyle": "PackageReference",

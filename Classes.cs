@@ -10,15 +10,16 @@ namespace GirlPickuper
     {
         public static void PrintSlowly(string text, int delayMilliseconds)
         {
+            Console.Write("> ");
             foreach (char c in text)
             {
-                Console.Write(c); // Print character without newline
-                Thread.Sleep(delayMilliseconds); // Delay in milliseconds
+                Console.Write(c);
+                Thread.Sleep(delayMilliseconds);
             }
             Console.WriteLine();
         }
 
-        public static void AskQuestion(string question, string yesResponse, string noResponse)
+        public static bool AskQuestion(string question, string yesResponse, string noResponse)
         {
             string response;
             do
@@ -29,12 +30,37 @@ namespace GirlPickuper
 
             if (response == "y")
             {
+                Thread.Sleep(1500);
                 PrintSlowly(yesResponse, 30);
+                return true;
             }
             else
             {
+                Thread.Sleep(1500);
                 PrintSlowly(noResponse, 30);
+                return false;
             }
+        }
+
+        public static string InputQuestion(string question)
+        {
+            string input;
+            do
+            {
+                PrintSlowly(question, 30);
+                input = Console.ReadLine()?.Trim();
+                //Console.WriteLine($"input is {input}");
+
+                if (string.IsNullOrWhiteSpace(input))
+                {
+                    PrintSlowly("> Input cannot be empty. Please try again.", 30);
+                    continue;
+                }
+
+                break;
+            } while (true);
+
+            return input;
         }
     }
 }
